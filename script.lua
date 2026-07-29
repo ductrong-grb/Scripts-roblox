@@ -1,5 +1,5 @@
 -- =================================================================
--- BỘ KHUNG GIAO DIỆN PREMIUM V10.1 - FIX LỖI FOV & AIMBOT DỆT TÂM
+-- BỘ KHUNG GIAO DIỆN PREMIUM V10.2 - FIX LỖI KẸT LOADING SCREEN 0%
 -- =================================================================
 
 local Menu = {}
@@ -120,7 +120,7 @@ TitleCorner.Parent = TitleBar
 local TitleText = Instance.new("TextLabel")
 TitleText.Size = UDim2.new(0.7, 0, 1, 0)
 TitleText.Position = UDim2.new(0, 14, 0, 0)
-TitleText.Text = "PRIME PRO V10.1 • TAB SYSTEM"
+TitleText.Text = "PRIME PRO V10.2 • TAB SYSTEM"
 TitleText.TextColor3 = Color3.fromRGB(255, 255, 255)
 TitleText.Font = Enum.Font.GothamBold
 TitleText.TextSize = 12
@@ -646,7 +646,7 @@ local function createESP(player)
         label.Font = Enum.Font.SourceSansBold
         label.TextSize = 12
         label.Text = player.DisplayName
-        label.Parent = label
+        label.Parent = bGui -- *** ĐÃ FIX: Gán đúng vào BillboardGui, không tự gán vào chính nó gây crash luồng nữa!
 
         char.Destroying:Connect(function() mainStorage:Destroy() end)
     end
@@ -826,4 +826,3 @@ task.spawn(function()
     LoadingFrame:Destroy()
     MainFrame.Visible = true
 end)
-
