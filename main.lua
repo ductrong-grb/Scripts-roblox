@@ -5,7 +5,7 @@
 -- CHÚ Ý: Hãy thay thế toàn bộ link ví dụ dưới đây bằng link RAW thật trên GitHub của bạn!
 local AIMBOT_URL = "https://raw.githubusercontent.com/ductrong-grb/Scripts-roblox/refs/heads/main/aimbot.lua"
 local ESP_URL    = "https://raw.githubusercontent.com/ductrong-grb/Scripts-roblox/refs/heads/main/esp.lua"
-local UTILS_URL  = "https://raw.githubusercontent.com/TenGitHubCuaBan/TenRepo/main/utilities.lua"
+local UTILS_URL  = "https://raw.githubusercontent.com/ductrong-grb/Scripts-roblox/refs/heads/main/utilities.lua"
 local UI_URL     = "https://raw.githubusercontent.com/TenGitHubCuaBan/TenRepo/main/ui.lua"
 
 print("[System] Bắt đầu tải các phân đoạn mã nguồn...")
