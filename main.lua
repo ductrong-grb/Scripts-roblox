@@ -2,11 +2,11 @@
 -- HỆ THỐNG ĐIỀU PHỐI CHÍNH (MAIN HUB) - PREMIUM V10.3.1
 -- =================================================================
 
--- CHÚ Ý: Hãy thay thế toàn bộ link ví dụ dưới đây bằng link RAW thật trên GitHub của bạn!
-local AIMBOT_URL = "https://raw.githubusercontent.com/ductrong-grb/Scripts-roblox/refs/heads/main/aimbot.lua"
-local ESP_URL    = "https://raw.githubusercontent.com/ductrong-grb/Scripts-roblox/refs/heads/main/esp.lua"
-local UTILS_URL  = "https://raw.githubusercontent.com/ductrong-grb/Scripts-roblox/refs/heads/main/utilities.lua"
-local UI_URL     = "https://raw.githubusercontent.com/ductrong-grb/Scripts-roblox/refs/heads/main/ui.lua"
+-- ĐÃ CẬP NHẬT ĐƯỜNG DẪN RAW CHÍNH XÁC ĐẾN REPO CỦA BẠN
+local AIMBOT_URL = "https://raw.githubusercontent.com/ductrong-grb/Scripts-roblox/main/aimbot.lua"
+local ESP_URL    = "https://raw.githubusercontent.com/ductrong-grb/Scripts-roblox/main/esp.lua"
+local UTILS_URL  = "https://raw.githubusercontent.com/ductrong-grb/Scripts-roblox/main/utilities.lua"
+local UI_URL     = "https://raw.githubusercontent.com/ductrong-grb/Scripts-roblox/main/ui.lua"
 
 print("[System] Bắt đầu tải các phân đoạn mã nguồn...")
 
@@ -51,7 +51,7 @@ local Menu = UIModule.CreateMenu(Modules)
 -- 1. Cấu hình Tab Aimbot
 Menu:CreateToggle("Aimbot", "🔥 AIMBOT 4 (SIÊU CẤP ĐÓNG ĐINH Ở GẦN) 🔥", false, function(state) Modules.Aimbot.Settings.aimbot4Enabled = state end)
 Menu:CreateToggle("Aimbot", "Aimbot 3 (Khóa Cứng 100%)", false, function(state) Modules.Aimbot.Settings.aimbot3Enabled = state end)
-Menu:CreateToggle("Aimbot", "Aimbot 2 (Tự Động Lia Mượt)", false, function(state) Modules.Aimbot.Settings.aimbot2Enabled = state end)
+Menu:CreateToggle("Aimbot", "Aimbot 2 (Tự Động Lia Mượt)", false, function(state) Modules.Aimbot.Settings.aimSmoothSpeed = state end)
 Menu:CreateSlider("Aimbot", "Độ Mượt Lia Tâm (Cho Aimbot 2)", 1, 10, 5, function(value) Modules.Aimbot.Settings.aimSmoothSpeed = value end)
 Menu:CreateToggle("Aimbot", "Aimbot 1 (Nhấn Giữ Chuột/Touch)", false, function(state) Modules.Aimbot.Settings.aimbot1Enabled = state end)
 Menu:CreateToggle("Aimbot", "Hiển Thị Vòng FOV", false, function(state) Modules.Aimbot.Settings.fovEnabled = state end)
