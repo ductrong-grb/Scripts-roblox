@@ -6,7 +6,7 @@
 local AIMBOT_URL = "https://raw.githubusercontent.com/ductrong-grb/Scripts-roblox/refs/heads/main/aimbot.lua"
 local ESP_URL    = "https://raw.githubusercontent.com/ductrong-grb/Scripts-roblox/refs/heads/main/esp.lua"
 local UTILS_URL  = "https://raw.githubusercontent.com/ductrong-grb/Scripts-roblox/refs/heads/main/utilities.lua"
-local UI_URL     = "https://raw.githubusercontent.com/TenGitHubCuaBan/TenRepo/main/ui.lua"
+local UI_URL     = "https://raw.githubusercontent.com/ductrong-grb/Scripts-roblox/refs/heads/main/ui.lua"
 
 print("[System] Bắt đầu tải các phân đoạn mã nguồn...")
 
